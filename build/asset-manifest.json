@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-website/static/css/main.53c5b949.css",
+    "main.js": "/react-portfolio-website/static/js/main.692ba81b.js",
+    "static/media/certificate2.png": "/react-portfolio-website/static/media/certificate2.838351b08dffe619a171.png",
+    "static/media/certificate1.png": "/react-portfolio-website/static/media/certificate1.3c11646184395655f4a0.png",
+    "static/media/Neha_Ambhore_resume.pdf": "/react-portfolio-website/static/media/Neha_Ambhore_resume.dc919f3f35cb62ccc9a5.pdf",
+    "static/media/portfolio2.png": "/react-portfolio-website/static/media/portfolio2.7aef2239007b39344f61.png",
+    "static/media/me2.jpeg": "/react-portfolio-website/static/media/me2.7c8bde30c80c37539814.jpeg",
+    "static/media/me1.jpeg": "/react-portfolio-website/static/media/me1.18213dcc36a43ca5d720.jpeg",
+    "static/media/avtr4.jpg": "/react-portfolio-website/static/media/avtr4.ddcb52c693faf3af2379.jpg",
+    "static/media/avtr1.png": "/react-portfolio-website/static/media/avtr1.1beb30a265d4e7366032.png",
+    "static/media/portfolio1.jpg": "/react-portfolio-website/static/media/portfolio1.ea22910318dc76e1dfa0.jpg",
+    "static/media/avtr2.jpg": "/react-portfolio-website/static/media/avtr2.2fc5d813034329b8d71d.jpg",
+    "index.html": "/react-portfolio-website/index.html",
+    "main.53c5b949.css.map": "/react-portfolio-website/static/css/main.53c5b949.css.map",
+    "main.692ba81b.js.map": "/react-portfolio-website/static/js/main.692ba81b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53c5b949.css",
+    "static/js/main.692ba81b.js"
+  ]
+}
