@@ -1,0 +1,333 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about__me-image:hover {
+   transform: rotate(0deg);
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+.about__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.about__card h5 {
+    font-size: 0.95rem;
+}
+
+.about__card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+.about__content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+
+}
+
+/* Styling for the modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+  
+  /* Styling for the modal content */
+  .modal-content {
+    background: var(--color-bg-variant); /* Use the same background as .about__card */
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 4rem;
+    text-align: center;
+    transition: var(--transition);
+    max-width: 80%; /* Adjust the width as needed */
+    max-height: 85%; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }
+  
+  /* Optional: Styling for the close button */
+  .modal-content button.close-button {
+    background: transparent; /* Make it transparent like .about__card:hover */
+    border: 1px solid var(--color-primary-variant); /* Border like .about__card:hover */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: var(--color-primary); /* Text color like .about__icon */
+    transition: var(--transition);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the close icon (X sign) */
+  .close-icon {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: var(--color-primary); /* Color for the X sign */
+  }
+  
+  /* Optional: Hover effect for the close icon */
+  .close-button:hover .close-icon {
+    color: var(--color-primary-variant); /* Change color on hover */
+  }
+
+  /* Styling for the modal content */
+.modal-content {
+    position: relative; /* Position the close button relative to the modal */
+    text-align: left; /* Align text to the left */
+    padding: 2rem;
+    text-align: left; /* Align text to the left */
+    padding: 2rem;
+  }
+  
+  /* Styling for each experience block */
+  .modal-content div {
+    margin-bottom: 1rem; /* Add space between experience blocks */
+  }
+  
+  /* Styling for the company name */
+  .modal-content h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem; /* Add space below the company name */
+  }
+  
+  /* Styling for the position and year */
+  .modal-content .position-year {
+    font-size: 0.9rem; /* Smaller font size for position and year */
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between; /* Position elements on opposite corners */
+    align-items: baseline; /* Align elements to their baseline */
+  }
+  
+  /* Styling for the bullet points in description */
+  .modal-content .description ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 1rem; /* Adjust the margin as needed */
+    font-size: 0.8rem; /* Font size for bullet points */
+    color: var(--color-light);
+    padding-left: 0; /* Remove default padding on ul element */
+  }
+  
+  /* Styling for the education modal */
+.modal-content.education {
+    background-color: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    max-width: 80%; /* Adjust the width as needed */
+    max-height: 80%; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    position: relative; /* Position for close button */
+  }
+  
+  /* Styling for the close button in education modal */
+  .modal-content.education .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: var(--color-primary); /* Color for the X sign */
+  }
+  
+  /* Styling for the close icon (X sign) in education modal */
+  .modal-content.education .close-icon {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: var(--color-primary); /* Color for the X sign */
+  }
+  
+  /* Styling for education details in modal */
+  .modal-content.education h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-content.education p.degree {
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: 0.2rem;
+  }
+  
+  .modal-content.education p.year {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    margin-bottom: 0.2rem;
+  }
+  
+  .modal-content.education p.cgpa {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    margin-bottom: 0.2rem;
+  }
+  
+  .modal-content.education p.coursework {
+    font-size: 0.8rem;
+    color: var(--color-light);
+    margin-bottom: 0.2rem;
+  }
+  
+  /* Optional: Hover effect for the close icon */
+  .modal-content.education .close-button:hover .close-icon {
+    color: var(--color-primary-variant); /* Change color on hover */
+  }
+
+  /* Styling for the certificate modal */
+.modal-content.certificate {
+    background-color: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    max-width: 80%; /* Adjust the width as needed */
+    max-height: 80%; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    position: relative; /* Position for close button */
+  }
+  
+  /* Styling for the close button in certificate modal */
+  .modal-content.certificate .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: var(--color-primary); /* Color for the X sign */
+  }
+  
+  /* Styling for the close icon (X sign) in certificate modal */
+  .modal-content.certificate .close-icon {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: var(--color-primary); /* Color for the X sign */
+  }
+  
+  /* Styling for certificate details in modal */
+  .modal-content.certificate h3 {
+    font-size: 1.2rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+  }
+  
+  .modal-content.certificate img {
+    max-width: 90%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 2rem;
+    align-self: center;
+   
+  }
+  
+  /* Optional: Hover effect for the close icon */
+  .modal-content.certificate .close-button:hover .close-icon {
+    color: var(--color-primary-variant); /* Change color on hover */
+  }
+
+  .bio {
+
+    font-size: 0.85rem;
+
+  }
+  
+  
+  
+
+
+/*=========================MEDIA QUERIES(MEDIUM DEVICES)============================*/
+
+@media screen and (max-width: 1024px){
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+     }
+ 
+     .about__me{
+         width: 50%;
+         margin: 2rem auto 4rem;
+     }
+ 
+     .about__content p {
+         margin: 1rem 0 1.5rem;
+     }
+
+}
+
+
+/*=========================MEDIA QUERIES(SMALL DEVICES)============================*/
+
+@media screen and (max-width: 600px){
+    
+
+    .about__me{
+        width: 65%;
+        margin: 0rem auto 3rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+
+}
